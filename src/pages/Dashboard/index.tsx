@@ -3,21 +3,14 @@ import { FiChevronRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 import { Title, Form, Repositories, Error } from './styles';
+import RepositoryModel from '../../models/RepositoryModel';
 import logoImg from '../../assets/logo.svg';
 import { api } from '../../services/api';
 
-interface Repository {
-  full_name: string;
-  description: string;
-  owner: {
-    login: string;
-    avatar_url: string;
-  };
-}
 const Dashboard: React.FC = () => {
   const [inputError, setInputError] = useState('');
   const [newRepo, setNewRepo] = useState('');
-  const [repositories, setRepositories] = useState<Repository[]>(() => {
+  const [repositories, setRepositories] = useState<RepositoryModel[]>(() => {
     const storagedRepositories = localStorage.getItem(
       '@GithubExplorer:repositories',
     );
@@ -46,7 +39,7 @@ const Dashboard: React.FC = () => {
     }
 
     try {
-      const response = await api.get<Repository>(`/repos/${newRepo}`);
+      const response = await api.get<RepositoryModel>(`/repos/${newRepo}`);
       const repository = response.data;
 
       setRepositories([...repositories, repository]);
@@ -65,7 +58,7 @@ const Dashboard: React.FC = () => {
         <input
           value={newRepo}
           onChange={e => setNewRepo(e.target.value)}
-          placeholder="Digite o nome do repositório"
+          placeholder="Digite o nome do usuário/repositório"
         />
         <button type="submit">Pesquisar</button>
       </Form>
