@@ -18,7 +18,7 @@ Check out the [contributing](https://github.com/jonathancsr/github-repositories/
 
 # :closed_book: License
 
-Released in 2019.
+Released in 2020.
 This project is under the [MIT license](https://github.com/jonathancsr/github-repositories/master/LICENSE).
 
 Made by [Jonathan Rodrigues](https://github.com/jonathancsr) 🚀
