@@ -1,5 +1,3 @@
-# github-repositories-explorer
-
 # Github-Explorer
 🐱This is an application developed to explore and favor github repositories, made in react and published on netlify. 
 
