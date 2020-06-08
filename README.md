@@ -11,11 +11,11 @@
 
 # :tada: Contributing
 
-Check out the [contributing](https://github.com/jonathancsr/github-repositories/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
+Check out the [contributing](https://github.com/jonathancsr/github-repositories-explorer/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
 
 # :closed_book: License
 
 Released in 2020.
-This project is under the [MIT license](https://github.com/jonathancsr/github-repositories/master/LICENSE).
+This project is under the [MIT license](https://github.com/jonathancsr/github-repositories-explorer/blob/master/LICENSE).
 
 Made by [Jonathan Rodrigues](https://github.com/jonathancsr) 🚀
